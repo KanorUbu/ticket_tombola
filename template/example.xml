@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml_1_0.dtd">
+<document xmlns:py="http://genshi.edgewall.org/">
+<template pageSize="(595, 842)" leftMargin="72" showBoundary="0">
+  <pageTemplate id="main">
+    <frame id="first" x1="1in" y1="1in" width="6.27in" height="9.69in"/>
+  </pageTemplate>
+</template>
+<stylesheet>
+  <blockTableStyle id="mynicetable" spaceBefore="12">
+    <lineStyle kind="OUTLINE" colorName="black" thickness="0.5"/>
+    <blockFont name="Times-Bold" size="6" leading="7" start="0,0" stop="-1,0"/>
+    <blockBottomPadding length="1"/>
+    <blockBackground colorName="0xD0D0D0" start="0,0" stop="-1,0"/>
+    <lineStyle kind="LINEBELOW" colorName="black" start="0,0" stop="-1,0" thickness="0.5"/>
+    <!--body section-->
+    <blockFont name="Times-Roman" size="6" leading="7" start="0,1" stop="-1,-1"/>
+    <blockTopPadding length="1" start="0,1" stop="-1,-1"/>
+    <blockBackground colorsByRow="0xD0FFD0;None" start="0,1" stop="-1,-1"/>
+    <blockAlignment value="right" start="1,1" stop="-1,-1"/>
+
+    <!-- closing the table when restarting it on next page -->
+    <lineStyle kind="LINEBELOW" colorName="black" start="0,splitlast" stop="-1,splitlast" thickness="0.5"/>
+  </blockTableStyle>
+</stylesheet>
+<story>
+  <h1>$title</h1>
+  <blockTable repeatRows="1" style="mynicetable">
+    <tr><td py:for="i in range(10)">Row ${i}</td></tr>
+    <tr py:for="line in data"><td py:for="col in line" py:content="col" /></tr>
+  </blockTable>
+  <para py:content="dummy" />
+</story>
+</document>
+

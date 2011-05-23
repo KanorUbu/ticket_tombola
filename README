@@ -1,0 +1,8 @@
+Utilisation:
+
+virtualenv tombola
+cd tombola
+git clone github.com:KanorUbu/ticket_tombola.git  src
+bin/easy_install pip
+bin/pip install -r src/requirements.txt
+bin/python src/main.py
