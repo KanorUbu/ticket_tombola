@@ -57,17 +57,16 @@
           </td>
           <td  align="right">
             <para style="s_titre">Tombola Ubuntu Party</para>
-            <para style="base_l">Dimanche 29 Mai 2011</para>
+            <para style="base_l">Dimanche 13 Novembre 2011</para>
             <para style="base_l">Tirage à 17h30 au Carefour Numérique</para>
             <para style="base_l">Cité des sicences et de l'industrie, Paris</para>
             <para >Billet n° <b>$numero</b> <font size="8">[$num_rand]</font></para>
             <para style="s_fin">Règlement et résultats :</para>
-            <para style="s_lien">ubntu-paris.org/tombola_11.04</para>
+            <para style="s_lien">http://ubuntu-paris.org/tombola_11.10</para>
           </td>
           <td>
               <!-- <illustration width="4cm"> -->
-
-                  <imageAndFlowables imageName="${path_current}/template/ressource/logo.png"/>
+                  <imageAndFlowables imageName="${path_current}/template/ressource/logo_n_b.png"/>
             <!-- </illustration> -->
          </td>
         </py:with>
